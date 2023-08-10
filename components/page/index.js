@@ -18,22 +18,19 @@ const Layout = ({ children, title }) => {
       px={[4, 4, 12]}
     >
       <Head>
-        <title>{title ? title + ` - UniV3 Staker` : `UniV3 Staker`}</title>
+        <title>TokenBot</title>
         <link rel="icon" href="/favicon.png" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@lewifree" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://staker.projects.sh" />
-        <meta property="og:title" content="Ribbon (RBN) staker" />
+        <meta property="og:url" content="https://earn.tokenbot.com" />
+        <meta property="og:title" content="TokenBot ($TKB) staker" />
         <meta
           property="og:description"
-          content="A staking UI for the Ribbon reward program."
+          content="Stake and Earn $TKB Rewards."
         />
-        <meta property="og:site_name" content="Uniswap V3 staker" />
+        <meta property="og:site_name" content="TokenBot" />
         <meta
           property="og:image"
-          content="https://staker.projects.sh/image.png"
+          content="https://dvuscm5v4ps9q.cloudfront.net/banner.png"
         />
       </Head>
       <Alerts />

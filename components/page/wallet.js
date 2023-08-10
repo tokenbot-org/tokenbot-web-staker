@@ -30,7 +30,7 @@ export default function WalletModal() {
       <Button
         onClick={() => (account ? null : onOpen())}
         variant="solid"
-        colorScheme="red"
+        colorScheme="yellow"
         boxShadow="md"
         borderRadius="lg"
       >
@@ -113,7 +113,7 @@ const WalletButton = ({ children, func }) => {
 }
 
 const CancelButton = ({
-  fill = '#fff',
+  fill = '#000',
   width = '16px',
   height = '16px',
   margin = {},

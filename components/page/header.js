@@ -5,7 +5,6 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode'
 import { Box, Flex, LinkBox, LinkOverlay } from '@chakra-ui/layout'
 import { Heading, Text, Center } from '@chakra-ui/react'
-import Ribbon from '../ribbon'
 import { useWeb3 } from '../../contexts/useWeb3'
 
 import UserAddress from './wallet'
@@ -19,6 +18,8 @@ const Header = () => {
 
   return (
     <Center>
+      <LinkBox><LinkOverlay href="https://app.tokenbot.com"><Image src="logo-icon.svg" alt="TokenBot logo" mb={4} boxSize='90px' /></LinkOverlay></LinkBox>
+      
       <Flex
         justifyContent="space-between"
         alignItems="flex-start"
@@ -28,13 +29,12 @@ const Header = () => {
         maxW={{ base: '100%', md: 960 }}
       >
         <Flex width={['auto', 'auto']}>
-          <Ribbon w={64} h={64} />
           <Box ml="2">
             <Heading size="lg" mb={2}>
-              Ribbon LP Staking
+              TokenBot ($TKB) LP Staking
             </Heading>
             <Text fontSize="lg" color="gray.500">
-              Stake your RBN/ETH LP position
+              Stake your TKB/ETH LP position
             </Text>
           </Box>
         </Flex>

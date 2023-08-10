@@ -21,6 +21,21 @@ export default function FAQs() {
       </Heading>
       <Accordion w="full" allowToggle>
         <AccordionItem>
+        <h2>
+            <AccordionButton>
+              <Box flex="1" textAlign="left" fontWeight="600">
+                What is TokenBot ($TKB)?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <Text>{`TokenBot is a social trading bot powered by $TKB.`}</Text>
+            <br />
+            <Text>{`The TokenBot Network represents an innovative token-gated based marketplace that serves as a nexus for social trading in the crypto world. Utilizing the TKB token and the integrated chat bots on Discord and Telegram, it provides an infrastructure for traders to connect with leading investors to syndicate algorithmic and quantitative trading strategies.`}</Text>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left" fontWeight="600">
@@ -64,7 +79,7 @@ export default function FAQs() {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left" fontWeight="600">
-                How do I stake my RBN tokens?
+                How do I stake my TKB tokens?
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -79,7 +94,7 @@ export default function FAQs() {
                 <Link
                   href="https://app.uniswap.org/#/add/ETH/0x6123B0049F904d730dB3C36a31167D9d4121fA6B/10000"
                   isExternal
-                >{`Uniswap v3 "Add Liquidity" page for RBN & ETH.`}</Link>
+                >{`Uniswap v3 "Add Liquidity" page for TKB & ETH.`}</Link>
               </ListItem>
               <ListItem>{`Select a range for your liquidity and supply the tokens.`}</ListItem>
               <ListItem>{`Click "Connect Wallet" and choose a wallet provider.`}</ListItem>
@@ -126,21 +141,6 @@ export default function FAQs() {
             <Text>When you stake your NFT, your NFT will be temporarily held on the Staker contract. This gives it the ability to earn RBN rewards for providing liquidity. When you Exit, the NFT will be returned back to your wallet.</Text>
             <br/>
             <Text>To see details of the position, click the 'Token ID' link on the left-hand side of the position.</Text>
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box flex="1" textAlign="left" fontWeight="600">
-                Is this an official site?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            <Text>{`No, this is website is unaffiliated with Uniswap or any token project. It was created to help people navigate the somewhat confusing Uniswap V3 Staker design. It is provided for your enjoyment and without any warranties. Be safe and double check your TXs before you send them.`}</Text>
-            <br />
-            <Text>{`If you'd like to check the source code or host your own site, please check out the Github link in the bottom right. `}</Text>
           </AccordionPanel>
         </AccordionItem>
       </Accordion>

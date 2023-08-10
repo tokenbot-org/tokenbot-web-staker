@@ -37,14 +37,23 @@ import {
 
 import { comma } from '../utils/helpers'
 
-// RBN PROGRAM
+// TKB PROGRAM
 const IncentiveKey = [
-  '0x6123B0049F904d730dB3C36a31167D9d4121fA6B',
-  '0x94981F69F7483AF3ae218CbfE65233cC3c60d93a',
-  1633694400,
-  1638878400,
-  '0xDAEada3d210D2f45874724BeEa03C7d4BBD41674'
+  '0x16594930D16f3970e1a4317c6016555cb2e7b7Fc',
+  '0x415B5ad4376255e6CC91bE2a0e838b7C7845a28e',
+  1691172000,
+  1754031540,
+  '0xBB6c244Bb91d597740092A4b5f7dCE71f0eC6909'
 ]
+
+// const IncentiveKey = [
+//   '0x6123B0049F904d730dB3C36a31167D9d4121fA6B',
+//   '0x94981F69F7483AF3ae218CbfE65233cC3c60d93a',
+//   1633694400,
+//   1638878400,
+//   '0xDAEada3d210D2f45874724BeEa03C7d4BBD41674'
+// ]
+
 
 const programEmissions = 10000000
 const secondsInAYear = 31540000
@@ -75,6 +84,7 @@ export default function Home() {
       const tx = await stakeNFT(id, IncentiveKey)
       watchTx(tx.hash, 'Staking NFT')
     } catch (error) {
+      console.log(error);
       addAlert('fail', 'Program not active. Try later')
     }
   }
@@ -119,7 +129,7 @@ export default function Home() {
         >
           <Flex w="100%" maxW={['100%', 960]} mb={8}>
             <Stat>
-              <StatLabel>RBN Price</StatLabel>
+              <StatLabel>TKB Price</StatLabel>
               <StatNumber>
                 {pool.tvl ? `$${commas(pool.token)}` : '$0.0'}
               </StatNumber>
@@ -166,13 +176,13 @@ export default function Home() {
             <Table variant="simple">
               <Thead>
                 <Tr>
-                  <Th>Token ID</Th>
-                  <Th>Location</Th>
-                  <Th>In Range?</Th>
-                  <Th>% of Pool</Th>
-                  <Th>Fees</Th>
-                  <Th>Rewards</Th>
-                  <Th>Actions</Th>
+                  <Th color="#FFF">Token ID</Th>
+                  <Th color="#FFF">Location</Th>
+                  <Th color="#FFF">In Range?</Th>
+                  <Th color="#FFF">% of Pool</Th>
+                  <Th color="#FFF">Fees</Th>
+                  <Th color="#FFF">Rewards</Th>
+                  <Th color="#FFF">Actions</Th>
                 </Tr>
               </Thead>
 
@@ -283,12 +293,12 @@ export default function Home() {
                                 Claim
                               </Button>
                               <Button
-                                colorScheme="gray"
+                                colorScheme="red"
                                 onClick={() =>
                                   exit(position.id, position.reward)
                                 }
                               >
-                                Exit
+                                Unstake
                               </Button>
                             </>
                           ) : null}

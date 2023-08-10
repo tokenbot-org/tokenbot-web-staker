@@ -6,7 +6,7 @@ import erc20ABI from './erc20.json'
 
 export const v3Staker = {
   abi: v3StakerABI,
-  address: '0x1f98407aaB862CdDeF78Ed252D6f557aA5b0f00d'
+  address: '0xe34139463bA50bD61336E0c446Bd8C0867c6fE65'
 }
 export const v3Positions = {
   abi: v3PositionsABI,

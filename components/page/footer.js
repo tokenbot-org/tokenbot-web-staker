@@ -4,13 +4,13 @@ import useWeb3 from '../../contexts/useWeb3'
 
 const links = [
   {
-    label: 'github',
-    href: 'https://github.com/l3wi/univ3-staking',
+    label: 'GeckoTerminal',
+    href: 'https://www.geckoterminal.com/eth/pools/0x415b5ad4376255e6cc91be2a0e838b7c7845a28e',
     isExternal: true
   },
   {
-    label: 'lewi',
-    href: 'https://twitter.com/lewifree',
+    label: 'Twitter',
+    href: 'https://twitter.com/tokenbot',
     isExternal: true
   }
 ]
@@ -28,10 +28,10 @@ const Footer = () => {
       >
         <Box textAlign={['center', 'center', 'initial']}>
           <Text fontWeight="bold" fontSize="md">
-            staker.projects.sh
+            TokenBot ($TKB) Staking DApp
           </Text>
           <Text fontSize="sm" color="gray.500">
-            A simple UI for Uniswap V3 staking programs
+            A simple UI for staking your $TKB positions
           </Text>
         </Box>
         <Box>
