@@ -26,6 +26,10 @@
     "react-icons": "^4.2.0",
     "use-wallet": "^0.9.0"
   },
+  "engines": {
+    "npm": "8.19.4",
+    "node": "16.20.2"
+  },
   "description": "Basic Uniswap V3 staking interface",
   "main": "index.js",
   "devDependencies": {
