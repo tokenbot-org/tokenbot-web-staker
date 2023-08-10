@@ -4,21 +4,21 @@ export default function Ribbon({ w, h }) {
 <svg version="1.1" preserveAspectRatio="none" x="0px" y="0px" width="150px" height="100px" viewBox="0 0 150 100">
 <defs>
 <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="10.4" y1="38.449999999999996" x2="10.4" y2="64.85" spreadMethod="pad">
-<stop  offset="0%" stop-color="#FFE856"/>
+<stop  offset="0%" stopColor="#FFE856"/>
 
-<stop  offset="100%" stop-color="#FFFEC2"/>
+<stop  offset="100%" stopColor="#FFFEC2"/>
 </linearGradient>
 
 <linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="56.5" y1="15.762499999999996" x2="56.5" y2="88.3375" spreadMethod="pad">
-<stop  offset="0%" stop-color="#FFD212"/>
+<stop  offset="0%" stopColor="#FFD212"/>
 
-<stop  offset="100%" stop-color="#FFF886"/>
+<stop  offset="100%" stopColor="#FFF886"/>
 </linearGradient>
 
 <linearGradient id="Gradient_3" gradientUnits="userSpaceOnUse" x1="102.65" y1="38.449999999999996" x2="102.65" y2="64.85" spreadMethod="pad">
-<stop  offset="0%" stop-color="#FFE856"/>
+<stop  offset="0%" stopColor="#FFE856"/>
 
-<stop  offset="100%" stop-color="#FFFEC2"/>
+<stop  offset="100%" stopColor="#FFFEC2"/>
 </linearGradient>
 
 <g id="Layer0_0_FILL">
