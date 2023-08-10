@@ -31,7 +31,7 @@ const Header = () => {
         <Flex width={['auto', 'auto']}>
           <Box ml="2">
             <Heading size="lg" mb={2}>
-              TokenBot ($TKB) LP Staking
+              TokenBot LP Staking
             </Heading>
             <Text fontSize="lg" color="gray.500">
               Stake your TKB/ETH LP position

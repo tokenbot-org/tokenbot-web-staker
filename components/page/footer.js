@@ -28,10 +28,10 @@ const Footer = () => {
       >
         <Box textAlign={['center', 'center', 'initial']}>
           <Text fontWeight="bold" fontSize="md">
-            TokenBot ($TKB) Staking DApp
+            TokenBot Staking DApp
           </Text>
           <Text fontSize="sm" color="gray.500">
-            A simple UI for staking your $TKB positions
+            A simple UI for staking $TKB UNI-V3 LP positions
           </Text>
         </Box>
         <Box>

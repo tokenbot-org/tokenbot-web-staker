@@ -28,7 +28,7 @@
   },
   "engines": {
     "npm": "8.19.4",
-    "node": "16.20.2"
+    "node": ">=16.0.0 <17.0.0"
   },
   "description": "Basic Uniswap V3 staking interface",
   "main": "index.js",
