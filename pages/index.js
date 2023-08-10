@@ -64,6 +64,7 @@ export default function Home() {
   const [positions, setPositions] = useState([])
   const [pool, setPool] = useState({})
   const cardBgColor = useColorModeValue('white', 'gray.700')
+  const headerTextColor = useColorModeValue('black', 'white')
 
   const deposit = async (id) => {
     try {
@@ -176,13 +177,13 @@ export default function Home() {
             <Table variant="simple">
               <Thead>
                 <Tr>
-                  <Th color="#FFF">Token ID</Th>
-                  <Th color="#FFF">Location</Th>
-                  <Th color="#FFF">In Range?</Th>
-                  <Th color="#FFF">% of Pool</Th>
-                  <Th color="#FFF">Fees</Th>
-                  <Th color="#FFF">Rewards</Th>
-                  <Th color="#FFF">Actions</Th>
+                  <Th color={headerTextColor}>Token ID</Th>
+                  <Th color={headerTextColor}>Location</Th>
+                  <Th color={headerTextColor}>In Range?</Th>
+                  <Th color={headerTextColor}>% of Pool</Th>
+                  <Th color={headerTextColor}>Fees</Th>
+                  <Th color={headerTextColor}>Rewards</Th>
+                  <Th color={headerTextColor}>Actions</Th>
                 </Tr>
               </Thead>
 
