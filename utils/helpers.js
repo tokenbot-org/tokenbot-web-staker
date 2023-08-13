@@ -1,7 +1,7 @@
-export const commas = (x) => {
+export const commas = (x, y) => {
   return parseFloat(x).toLocaleString('en-US', {
     minimumFractionDigits: 2,
-    maximumFractionDigits: 6,
+    maximumFractionDigits: y || 6,
   })
 }
 

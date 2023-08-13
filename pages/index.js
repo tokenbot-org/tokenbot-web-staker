@@ -132,19 +132,19 @@ export default function Home() {
             <Stat>
               <StatLabel>TKB Price</StatLabel>
               <StatNumber>
-                {pool.tvl ? `$${commas(pool.token)}` : '$0.0'}
+                {pool.tvl ? `$${commas(pool.token, 4)}` : '$0.0'}
               </StatNumber>
             </Stat>
             <Stat>
               <StatLabel>Pool TVL</StatLabel>
               <StatNumber>
-                {pool.tvl ? `$${commas(pool.tvl)}` : '$0.0'}
+                {pool.tvl ? `$${commas(pool.tvl, 2)}` : '$0.0'}
               </StatNumber>
             </Stat>
             <Stat>
               <StatLabel>Staking APR</StatLabel>
               <StatNumber>
-                {pool.apy ? `${commas(pool.apy)}%` : '0.0%'}
+                {pool.apy ? `${commas(pool.apy, 2)}%` : '0.0%'}
               </StatNumber>
             </Stat>
             <Stat>
@@ -155,7 +155,7 @@ export default function Home() {
                       positions
                         .map((i) => (i.reward ? i.reward / 1e18 : 0))
                         .reduce((a, b) => a + b)
-                    )}`
+                    , 2)}`
                   : '0.0'}{' '}
                 {`${pool.symbol ? pool.symbol : ''}`}
               </StatNumber>
@@ -243,7 +243,7 @@ export default function Home() {
                       </Td>
                       <Td fontSize="sm" w="fit-content">
                         <Box>
-                          {commas(position.fees0)} <b>{pool.symbol}</b>
+                          {commas(position.fees0, 2)} <b>{pool.symbol}</b>
                         </Box>
                         <Box>
                           {commas(position.fees1)} <b>WETH</b>
@@ -251,7 +251,7 @@ export default function Home() {
                       </Td>
 
                       <Td fontSize="sm">
-                        {commas(position.reward / 1e18)} {pool.symbol}
+                        {commas(position.reward / 1e18, 2)} {pool.symbol}
                       </Td>
                       <Td isNumeric>
                         <Flex>
