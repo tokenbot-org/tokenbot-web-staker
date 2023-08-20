@@ -22,7 +22,7 @@ const Layout = ({ children, title }) => {
         <link rel="icon" href="/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://earn.tokenbot.com" />
-        <meta property="og:title" content="TokenBot ($TKB) staker" />
+        <meta property="og:title" content="$TKB Uniswap V3 Staking DApp" />
         <meta
           property="og:description"
           content="Stake and Earn $TKB Rewards."

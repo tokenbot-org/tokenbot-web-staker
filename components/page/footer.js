@@ -9,8 +9,18 @@ const links = [
     isExternal: true
   },
   {
+    label: 'DexScan',
+    href: 'https://coinmarketcap.com/dexscan/ethereum/0x415b5ad4376255e6cc91be2a0e838b7c7845a28e/',
+    isExternal: true
+  },
+  {
     label: 'Twitter',
     href: 'https://twitter.com/tokenbot',
+    isExternal: true
+  },
+  {
+    label: 'Telegram',
+    href: 'https://t.me/tokenbotofficial',
     isExternal: true
   }
 ]
@@ -28,10 +38,10 @@ const Footer = () => {
       >
         <Box textAlign={['center', 'center', 'initial']}>
           <Text fontWeight="bold" fontSize="md">
-            TokenBot Staking DApp
+            $TKB Staking DApp
           </Text>
           <Text fontSize="sm" color="gray.500">
-            A simple UI for staking $TKB UNI-V3 LP positions
+            A simple UI for staking $TKB Uniswap V3 positions
           </Text>
         </Box>
         <Box>

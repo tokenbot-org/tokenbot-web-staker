@@ -21,7 +21,7 @@ export default function FAQs() {
       </Heading>
       <Accordion w="full" allowToggle>
         <AccordionItem>
-        <h2>
+          <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left" fontWeight="600">
                 What is TokenBot ($TKB)?
@@ -30,51 +30,21 @@ export default function FAQs() {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <Text>{`TokenBot is a social trading bot powered by $TKB.`}</Text>
+            <Text>
+              <Link href="https://www.tokenbot.com" isExternal fontWeight="bold" textDecoration="underline">
+                TokenBot
+              </Link>{' '}
+              is a crypto trading platform powered by{' '}
+              <Link href="https://coinmarketcap.com/currencies/tokenbot/" isExternal fontWeight="bold" textDecoration="underline">
+                $TKB
+              </Link>.
+            </Text>
             <br />
-            <Text>{`The TokenBot Network represents an innovative token-gated based marketplace that serves as a nexus for social trading in the crypto world. Utilizing the TKB token and the integrated chat bots on Discord and Telegram, it provides an infrastructure for traders to connect with leading investors to syndicate algorithmic and quantitative trading strategies.`}</Text>
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box flex="1" textAlign="left" fontWeight="600">
-                What is Liquidity Providing (LP)?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            <Text>{`Liquidity Providing (LP) is a new allows everyone to become a market maker. 
-            It's unique to Automated Market Makers (AMMs) like Uniswap & Curve. When you LP you 
-            are providing tokens to be used as a counter-party when someone wants to buy or sell a token. `}</Text>
-            <br />
-            <Text>{`In exchange for providing liquidity, LPs receive fees on each trade. This can 
-            be very profitable for LPs on token pairs with high volume. However it can be risky 
-            to be an LP as high fluctuations in price may mean that you end up with less value in 
-            the long run, even when accounting for trading fees.`}</Text>
-          </AccordionPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <h2>
-            <AccordionButton>
-              <Box flex="1" textAlign="left" fontWeight="600">
-                What is LP staking?
-              </Box>
-              <AccordionIcon />
-            </AccordionButton>
-          </h2>
-          <AccordionPanel pb={4}>
-            <Text>{`Alongside trading fees, reward programs may be setup on top of Uniswap V3 to incentivize people to provide liquidity. With Uniswap V3, anyone can participate in these rewards programs by placing the NFT token they receive when providing liquidity into a special contract. `}</Text>
-            <br />
-            <Text>{`Once in this contract, the NFT will start to accrue rewarded tokens if the liquidity provided is "in-range". "In-range" simply means that the exchange rate (price) of the tokens being swapped falls within the range that the user chose when they provided liquidity. `}</Text>
-            <br />
-            <Text fontSize="sm">
-              <i>{`Note: you can provide liquidity multiple times (accross different ranges) then stake those NFTs in the staker.`}</i>
+            <Text>
+              The TokenBot Trading Engine is a groundbreaking solution for high-frequency, low-latency automated trading in the crypto domain. With this engine, you can seamlessly link and mirror trades from one API key to another in real-time.
             </Text>
           </AccordionPanel>
         </AccordionItem>
-
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -93,7 +63,7 @@ export default function FAQs() {
                 {`Go to the  `}
                 <Link
                   href="https://app.uniswap.org/#/add/ETH/0x6123B0049F904d730dB3C36a31167D9d4121fA6B/10000"
-                  isExternal
+                  isExternal fontWeight="bold" textDecoration="underline"
                 >{`Uniswap v3 "Add Liquidity" page for TKB & ETH.`}</Link>
               </ListItem>
               <ListItem>{`Select a range for your liquidity and supply the tokens.`}</ListItem>
@@ -139,7 +109,7 @@ export default function FAQs() {
           </h2>
           <AccordionPanel pb={4}>
             <Text>When you stake your NFT, your NFT will be temporarily held on the Staker contract. This gives it the ability to earn RBN rewards for providing liquidity. When you Exit, the NFT will be returned back to your wallet.</Text>
-            <br/>
+            <br />
             <Text>To see details of the position, click the 'Token ID' link on the left-hand side of the position.</Text>
           </AccordionPanel>
         </AccordionItem>
